@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weiwei Hsu</title>
+    <link rel="stylesheet" href="public//css/app.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <script src="public//app/app.js"></script>
+
+
+
+</head>
+
+<body ng-class="{'article-page' : $state.current.name !== 'gallery', 'suppress-animation': isAnimationSuppressed()}" resize>
+
+    <svg version="1.1" id="icons" x="0px" y="0px" width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve" style="display: none;">
+  <g id="right-arrow">
+      <polyline fill="none" stroke="#cccccc" stroke-width="3" stroke-miterlimit="10" points="28.877,7.352 49.212,40 28.877,72.649"/>
+  </g>
+  <g id="left-arrow">
+      <polyline fill="none" stroke="#cccccc" stroke-width="3" stroke-miterlimit="10" points="51.123,72.648 30.788,40 51.123,7.351"/>
+  </g>
+  <g id="close-button">
+      <line fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" x1="51.782" y1="51.782" x2="28.218" y2="28.218"/>
+      <line fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" x1="28.218" y1="51.782" x2="51.782" y2="28.218"/>
+      <circle fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" cx="40" cy="40" r="31.5"/>
+  </g>
+
+</svg>
+
+    <header class="header">
+        <a herf="#"><img scr="assets/img/weiwei-hsu.png"></a>
+        <div class="social-links">
+            <p>
+                <a href="https://twitter.com/@weiweihsu_"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i>&nbsp;</a>
+
+                <a href="https://www.linkedin.com/in/weiweihsu"><i class="fa fa-linkedin fa-1x" aria-hidden="true"></i>&nbsp;</a>
+            </p>
+        </div>
+    </header>
+
+    <div class="gallery" id="gallery" ng-controller="galleryController" js-gallery>
+        <div class="gallery-wrap" id="gallery-wrap">
+            <a ng-href="/#about-me" class="gallery-piece" id="about-me" ng-class="{'active': 'about-me' == $state.current.name}" style="background-color: #6B7C9C" js-launch>
+                <div class="piece-image" js-load-image load-image-url="'/assets/img/weiwei.jpg'">
+                </div>
+                <div class="piece-title">
+                    <h3>Informaiton</h3>
+                    <p>Born in California, raised in Shanghai, Weiwei is a Taiwanese who is now studying Interaction Design at California College of the Arts in San Francisco, California.
+                    </p>
+                </div>
+            </a>
+            <!--Valence-->
+            <a ng-href="/#valence" class="gallery-piece" id="valence" ng-class="{'active': 'valence' == $state.current.name}" style="background-color: #D6BA81" js-launch>
+                <div class="piece-image" js-load-image load-image-url="'/assets/img/valence.jpg'">
+                </div>
+                <div class="piece-title">
+                    <div class="piece-category">
+                        <h3>Valence</h3></div>
+                    <p>Including car batteries into the energy grid.</p>
+                </div>
+            </a>
+            <!--Thinking Wrong-->
+            <a ng-href="/#thinking-wrong" class="gallery-piece" id="thinking-wrong" ng-class="{'active': 'thinking-wrong' == $state.current.name}" style="background-color: #D6BA81" js-launch>
+                <div class="piece-image" js-load-image load-image-url="'/assets/img/thinking-wrong.jpg'">
+                </div>
+                <div class="piece-title">
+                    <div class="piece-category">
+                        <h3>Thinking Wrong</h3></div>
+                    <p>The secret project to fuel meaningful actions.</p>
+                </div>
+            </a>
+            <!--Leveled Self-->
+            <a ng-href="/#leveled-self" class="gallery-piece" id="leveled-self" ng-class="{'active': 'leveled-self' == $state.current.name}" style="background-color: #D6BA81" js-launch>
+                <div class="piece-image" js-load-image load-image-url="'/assets/img/leveled-self.jpg'">
+                </div>
+                <div class="piece-title">
+                    <div class="piece-category">
+                        <h3>Leveled Self</h3></div>
+                    <p>A supply chain for receiving doses of inspirations and perspectives.</p>
+                </div>
+            </a>
+            <!--Creative Sketches-->
+            <a ng-href="/#creative-sketches" class="gallery-piece" id="creative-sketches" ng-class="{'active': 'creative-sketches' == $state.current.name}" style="background-color: #D6BA81" js-launch>
+                <div class="piece-image" js-load-image load-image-url="'/assets/img/creative-sketches.jpg'">
+                </div>
+                <div class="piece-title">
+                    <div class="piece-category">
+                        <h3>Creative Sketches</h3></div>
+                    <p>Exploring visual pathways.</p>
+                </div>
+            </a>
+            <!--Bridge-->
+            <a ng-href="/#bridge" class="gallery-piece" id="bridge" ng-class="{'active': 'bridge' == $state.current.name}" style="background-color: #D6BA81" js-launch>
+                <div class="piece-image" js-load-image load-image-url="'/assets/img/bridge.jpg'">
+                </div>
+                <div class="piece-title">
+                    <div class="piece-category">
+                        <h3>Button Up</h3></div>
+                    <p>An attempt to imagine a massive multiplayer offline game</p>
+                </div>
+            </a>
+            <!--xnode-accelerator-->
+            <a ng-href="/#xnode-accelerator" class="gallery-piece" id="xnode-accelerator" ng-class="{'active': 'xnode-accelerator' == $state.current.name}" style="background-color: #D6BA81" js-launch>
+                <div class="piece-image" js-load-image load-image-url="'/assets/img/xnode-accelerator.jpg'">
+                </div>
+                <div class="piece-title">
+                    <div class="piece-category">
+                        <h3>Xnode Accelerator</h3></div>
+                    <p>An internal culture incubation.</p>
+                </div>
+            </a>
+            <!--cyborg-->
+            <a ng-href="/#cyborg" class="gallery-piece" id="cyborg" ng-class="{'active': 'cyborg' == $state.current.name}" style="background-color: #D6BA81" js-launch>
+                <div class="piece-image" js-load-image load-image-url="'/assets/img/cyborg.jpg'">
+                </div>
+                <div class="piece-title">
+                    <div class="piece-category">
+                        <h3>Cyborg</h3></div>
+                    <p>Confronting the unknown future with ethics.</p>
+                </div>
+            </a>
+            <!--creator-caravan-->
+            <a ng-href="/#creator-caravan" class="gallery-piece" id="creator-caravan" ng-class="{'active': 'creator-caravan' == $state.current.name}" style="background-color: #D6BA81" js-launch>
+                <div class="piece-image" js-load-image load-image-url="'/assets/img/creator-caravan.jpg'">
+                </div>
+                <div class="piece-title">
+                    <div class="piece-category">
+                        <h3>Creator Caravan</h3></div>
+                    <p>A travel experience for eager learners.</p>
+                </div>
+            </a>
+            <!--archive-->
+            <a ng-href="/#archive" class="gallery-piece" id="archive" ng-class="{'active': 'archive' == $state.current.name}" style="background-color: #D6BA81" js-launch>
+                <div class="piece-image" js-load-image load-image-url="'/assets/img/archive.jpg'">
+                </div>
+                <div class="piece-title">
+                    <div class="piece-category">
+                        <h3>Archive</h3></div>
+                    <p></p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div ui-view></div>
+    </div>
+
+    <div class="footer">
+        Made by Justin Secor with <a href="https://angularjs.org/">Angular</a> and <a href="http://assemble.io/">Assemble</a>.
+    </div>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-34376835-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</body>
+
+</html>
