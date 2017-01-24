@@ -720,6 +720,8 @@ html {
 .article .article-body {
     padding-top: 20px;
     border-bottom: 1px solid #ccc
+    height
+
 }
 
 .article .article-body h2:first-child, .article .article-body h3:first-child, .article .article-body h4:first-child, .article .article-body p:first-child {
@@ -862,7 +864,7 @@ html {
 .article img {
     display: block;
     margin: 20px auto;
-    max-width: 100%
+    max-width: 1100px
 }
 
 @media only screen and (min-width: 600px) {
@@ -1021,7 +1023,7 @@ header img {
 }
 
 nav {
-  margin-top: 20px !important;
+  margin-top: 6px !important;
   float: right;
   font-size: 12px;
 }
