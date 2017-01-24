@@ -712,7 +712,7 @@ html {
 
 .article .banner {
     width: 100%;
-    height: 800px !important;
+    height: 875px !important
     position: relative
 }
 
@@ -1020,8 +1020,9 @@ header img {
 }
 
 nav {
-  margin-top: 40px;
+  margin-top: 20px;
   float: right;
+  font-size: 12pt;
 }
 
 ul {
