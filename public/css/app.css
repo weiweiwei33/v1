@@ -364,29 +364,6 @@ html {
     padding-right: 18px;
 }
 
-.header .social-links a {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 1em;
-    height: 1em;
-    display: inline-block;
-    font-size: 3rem;
-    line-height: 1;
-    margin-right: 10px;
-    position: relative
-}
-
-.header .social-links a:before {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    bottom: -10px;
-    left: -10px;
-    content: "";
-    display: block
-}
-
 .gallery {
     z-index: 0
 }
@@ -707,8 +684,13 @@ html {
 
 .gallery .piece-category {}
 
+  .article-max {
+      max-width: 900px;
+
+  }
+
 .article {
-    max-width: 900px;
+    max-width: 100%
     margin: 0 auto 100px;
     padding: 0 20px;
     text-align: left
