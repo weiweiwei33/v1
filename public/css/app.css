@@ -1005,6 +1005,36 @@ html {
     opacity: 1
 }
 
-.titledescription{
+/*Added this it may break things it moved. Or it could fix everything not sure yet.*/
+header {
+  height: 110px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #3d82f7
+}
 
+header img {
+  float: left;
+  width: 200px;
+  height: auto;
+  padding: 20px;
+}
+
+nav {
+  margin-top: 40px;
+  float: right;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a {
+  padding: 15px 20px;
+  text-decoration: none;
 }
