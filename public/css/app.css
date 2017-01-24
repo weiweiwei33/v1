@@ -178,6 +178,7 @@ optgroup {
 table {
     border-collapse: collapse;
     border-spacing: 0
+
 }
 
 td, th {
@@ -611,7 +612,7 @@ html {
 
 .gallery .piece-title {
     position: absolute;
-    top: 50%;
+    top: 30%;
     right: 0px;
     bottom: auto;
     left: 0px;
@@ -682,7 +683,14 @@ html {
     padding: 20px 10px
 }
 
+.header {
+  height: 120;
+}
+
 .gallery .piece-category {}
+  .p{
+
+  }
 
   .photo-max {
       max-width: 1200px;
@@ -721,7 +729,7 @@ html {
     position: absolute;
     top: auto;
     right: auto;
-    bottom: 100px;
+    bottom: 300px;
     left: 0px
 }
 
@@ -995,4 +1003,8 @@ html {
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1
+}
+
+.titledescription{
+
 }
