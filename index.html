@@ -13,22 +13,14 @@
 <body ng-class="{'article-page' : $state.current.name !== 'gallery', 'suppress-animation': isAnimationSuppressed()}" resize>
 
     <svg version="1.1" id="icons" x="0px" y="0px" width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve" style="display: none;">
-  <g id="right-arrow">
-      <polyline fill="none" stroke="#cccccc" stroke-width="3" stroke-miterlimit="10" points="28.877,7.352 49.212,40 28.877,72.649"/>
-  </g>
-  <g id="left-arrow">
-      <polyline fill="none" stroke="#cccccc" stroke-width="3" stroke-miterlimit="10" points="51.123,72.648 30.788,40 51.123,7.351"/>
-  </g>
+
   <g id="close-button">
       <line fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" x1="51.782" y1="51.782" x2="28.218" y2="28.218"/>
       <line fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" x1="28.218" y1="51.782" x2="51.782" y2="28.218"/>
       <circle fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" cx="40" cy="40" r="31.5"/>
   </g>
-
 </svg>
-
-    <header class="header">
-
+    <header class="head-space">
         <div class="logo-link">
             <a herf="#"><img scr="assets/img/weiwei-hsu.png"> WEIWEI HSU</a>
         </div>
@@ -36,9 +28,7 @@
             <h3><a href="https://twitter.com/@weiweihsu_">twitter </a></h3>
             <h3><a href="https://www.linkedin.com/in/weiweihsu">linkedin  </a></h3>
         </div>
-
     </header>
-
     <div class="gallery" id="gallery" ng-controller="galleryController" js-gallery>
         <div class="gallery-wrap" id="gallery-wrap">
             <a ng-href="/#about-me" class="gallery-piece" id="about-me" ng-class="{'active': 'about-me' == $state.current.name}" style="background-color: #6B7C9C" js-launch>

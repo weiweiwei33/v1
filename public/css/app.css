@@ -344,25 +344,20 @@ html {
     z-index: 100
 }
 
+.head-space{
+
+}
+
 .header .logo {
-    float: left;
-    margin: 0;
-    overflow: visible;
-    padding: 8px
+
 }
 
 .header .logo-link {
-    width: 1.75em;
-    height: 1.75em;
-    display: block;
-    font-size: 3rem;
-    line-height: 1
+
 }
 
 .header .social-links {
-    float: right;
-    padding-top: 18px;
-    padding-right: 18px;
+
 }
 
 .gallery {
