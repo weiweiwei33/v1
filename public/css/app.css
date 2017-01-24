@@ -344,14 +344,14 @@ html {
     z-index: 100
 }
 
-.header .logo {
+.logo {
     float: left;
     margin: 0;
     overflow: visible;
     padding: 8px
 }
 
-.header .logo-link {
+.logo-link {
     width: 1.75em;
     height: 1.75em;
     display: block;
@@ -359,7 +359,7 @@ html {
     line-height: 1
 }
 
-.header .social-links {
+.social-links {
     float: right;
     padding-top: 18px;
     padding-right: 18px;
