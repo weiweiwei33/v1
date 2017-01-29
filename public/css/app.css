@@ -813,7 +813,7 @@ html {
 }
 
 .article ul li, .article ol li {
-    padding: 0 3em 0 2.5em;
+    padding: 0 0em 0 1.5em;
     margin-bottom: 1em
 }
 
@@ -826,7 +826,7 @@ html {
 
 @media only screen and (min-width: 600px) {
     .article ul li {
-        background-position: 0.75em 0.5em
+        background-position: 0.5em 0.3em
     }
 }
 
