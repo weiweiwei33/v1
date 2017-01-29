@@ -818,7 +818,7 @@ html {
 }
 
 .article ul li {
-    background: url(../assets/img/bullet.svg);
+    /*background: url(../assets/img/bullet.svg);*/
     background-position: 0.75em 0.25em;
     background-repeat: no-repeat;
     background-size: 16px 16px
