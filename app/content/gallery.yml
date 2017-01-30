@@ -7,7 +7,7 @@ pieces:
     content: "about-me.md"
     color: "e23471"
 
-  -   title: "Valence"
+  -   title: "Energy Systems"
       background: "valence.jpg"
       category: "design"
       slug: "valence"
@@ -19,7 +19,7 @@ pieces:
     slug: "thinking-wrong"
     color: "c81b58"
 
--   title: "Leveled Self"
+-   title: "Unreal"
     background: "leveled-self.jpg"
     category: "design"
     slug: "leveled-self"
@@ -31,7 +31,7 @@ pieces:
     slug: "creative-sketches"
     color: "9c1544"
 
--   title: "Bridge"
+-   title: "Internet Connected Game"
     background: "bridge.jpg"
     category: "design"
     slug: bBridge"
@@ -43,13 +43,13 @@ pieces:
     slug: "xnode-accelerator"
     color: "6f0f31"
 
--   title: "Cyborg"
+-   title: "Posthuman"
     background: "cyborg.jpg"
     category: "design"
     slug: "cyborg"
     color: "590c27"
 
--   title: "Creative Caravan"
+-   title: "Visual Design"
     background: "creator-caravan.jpg"
     category: "design"
     slug: "creator-caravan"
