@@ -1050,13 +1050,13 @@ ul li a {
 }
 
 
-.video2 {
-  /*background-image: url('assets/img/creative-sketches-poster2.png');*/
+/*.video2 {
+  background-image: url('assets/img/creative-sketches-poster2.png');
   height: 330px;
   width: 330px;
 }
 .video3 {
-  /*background-image: url('assets/img/creative-sketches-poster3.png');*/
+  background-image: url('assets/img/creative-sketches-poster3.png');
   height: 330px;
   width: 330px;
 }
@@ -1113,4 +1113,4 @@ ul li a {
 /* Hide Play button + controls on iOS */
 video::-webkit-media-controls {
     display:none !important;
-}
+}*/
