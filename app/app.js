@@ -38,7 +38,7 @@ var app = angular.module(
                 var start = element.scrollLeft,
                     change = to - start,
                     currentTime = 0,
-                    increment = 10;
+                    increment = 40;
 
                 var animateScroll = function(){
                     currentTime += increment;
