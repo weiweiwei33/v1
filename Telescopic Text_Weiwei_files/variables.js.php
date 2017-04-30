@@ -1,0 +1,1 @@
+var TT_URL = 'http://www.telescopictext.org/';

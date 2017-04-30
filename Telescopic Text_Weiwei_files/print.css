@@ -1,0 +1,27 @@
+/* Print CSS */
+
+body {
+	color: #000000;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 14pt;
+	line-height:21pt;
+}
+
+a {
+	color: #000000;
+	text-decoration:none;
+}
+
+.credit {
+	padding-top:7pt;
+}
+
+#header, 
+#navigation, 
+#logged_in_user, 
+#footer, 
+.feature_button, 
+#floating_login {
+	display:none;
+	visibility:hidden;
+}

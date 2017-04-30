@@ -1,0 +1,33 @@
+body {
+	font-size: 24px;
+	line-height:30px;
+	padding:108px 60px 60px 60px;
+}
+
+div#telescopictext {
+	font-size: 48px;
+	line-height: 66px;
+	margin:0 0 60px 0;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+#header,
+div#navigation {
+	padding:18px 60px;
+}
+
+#footer,
+#logged_in_user {
+	display:none;
+}
+
+.entry {
+	font-size: 24px;
+}
